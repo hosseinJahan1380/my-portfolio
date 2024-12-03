@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background: url("pexels-cottonbro-6889204.jpg") no-repeat center/ cover;
+    background: url("martin-adams-MpTdvXlAsVE-unsplash.jpg") no-repeat center/ cover;
     background-attachment: fixed;
 }
 
@@ -17,7 +17,6 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 1px solid #ccc;
     background-color: aquamarine;
 }
 
@@ -28,7 +27,6 @@ header{
 }
 nav{
     width: 1100px;
-    border: 1px solid #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,5 +54,45 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #fff;
+    height: 700px;
+}
+
+.intro-text {
+   flex: 1;
+   max-width: 50%;
+   padding :10px 12px; 
+}
+
+.intro-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+.intro-text p{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #555;
+}
+.intro-text p:nth-child(3){
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.home-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-image img{
+    width: 300px;
+    height: 300px;
+    border-radius:50% ;
+    border: 2px solid #cbd1d6;
+    object-fit: cover;
+}
+/* About me section */
+.About{
+    border: 1px solid #333;
+    padding: 10px 15px;
 }
