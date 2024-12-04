@@ -4,6 +4,9 @@
     box-sizing: border-box;
     list-style: none;
 }
+:root{
+    --padding-total:10px 25px;
+}
 body{
     min-height: 100vh;
     display: flex;
@@ -54,13 +57,13 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 700px;
+    height: 500px;
 }
 
 .intro-text {
    flex: 1;
    max-width: 50%;
-   padding :10px 12px; 
+   padding :var(--padding-total); 
 }
 
 .intro-text h2{
@@ -94,5 +97,98 @@ nav ul li:hover{
 /* About me section */
 .About{
     border: 1px solid #333;
-    padding: 10px 15px;
+    padding: var(--padding-total);
+    font-size: 18px;
 }
+.About p{
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.About .btn{
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: "Poppins" sans-serif;
+    font-size: 15px;
+}
+.btn.resume{
+    background-color: #333;
+    color: #ddd;
+}
+.btn.contact{
+    background-color: #ddd;
+    color: #333;
+}
+.Skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: var(--padding-total);
+}
+.skills-icons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.Skills i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.bxl-css3 {
+    color: #1572B6;
+}
+.bxl-css3:hover {
+    color: #FFFFFF;
+    background-color: #1572B6;
+}
+
+.bxl-javascript {
+    color: #F7DF1E;
+}
+.bxl-javascript:hover {
+    color: #FFFFFF;
+    background-color: #F7DF1E;
+}
+
+.bxl-html5 {
+    color: #E34F26;
+}
+.bxl-html5:hover {
+    color: #FFFFFF;
+    background-color: #E34F26;
+}
+
+.bxl-python {
+    color: #3776AB;
+}
+.bxl-python:hover {
+    color: #FFFFFF;
+    background-color: #3776AB;
+}
+
+.bxl-react {
+    color: #61DAFB;
+}
+.bxl-react:hover {
+    color: #000000;
+    background-color: #61DAFB;
+}
+
+.bxl-tailwind-css {
+    color: #06B6D4;
+}
+.bxl-tailwind-css:hover {
+    color: #FFFFFF;
+    background-color: #06B6D4;
+}
+
