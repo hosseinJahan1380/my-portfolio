@@ -385,6 +385,7 @@ nav ul li:hover{
     padding: 5px 5px 10px 0px;
     width: 80%;
     border-bottom: 1px solid #a07d7d;
+    margin-left: 2px;
     
 }
 .location , .phoneNumber , .emailAddress{
@@ -396,11 +397,34 @@ nav ul li:hover{
 .location i , .phoneNumber i , .emailAddress i{
     position: absolute;
     left: 7px;
-    top: 22%;
+    top: 25%;
     border: 1px solid red;
     color: red;
     font-size: 20px;
     border-radius: 50%;
     padding: 10px;
+}
+.footer{
+    border: 1px solid #333;
+    position: relative;
+    padding: var(--padding-total);
+    text-align: center;
+}
+.footer p{
+    font-family: "Poppins" ,sans-serif;
+    font-weight:500;
+}
+#back-to-up {
+    border: 1px solid #333;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+    color:#333;
+    font-size: 20px;
+    font-weight: bold;
 }
 
