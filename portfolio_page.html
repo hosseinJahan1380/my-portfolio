@@ -15,17 +15,17 @@
         <nav class="navbar">
             <h2>Hossein</h2>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>skills</li>
-                <li>projects</li>
-                <li>contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <div class="Home">
+        <div class="Home" id="home">
             <div class="intro-text">
                 <h3>Hello 👋.i'm</h3>
                 <h2>Hossein Jahanbani Far</h2>
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="About">
+        <div class="About" id="about">
             <h2>About me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est perferendis itaque provident, 
                 officia tempore ipsum voluptatem illo ea. Reiciendis quod libero facilis velit labore. 
@@ -55,18 +55,20 @@
             <button class="btn contact">Contact me</button>
         </div>
 
-        <div class="Skills">
+        <div class="Skills" id="skills">
             <h2>My Skills</h2>
             <div class="skills-icons">
-                <i class='bx bxl-css3'></i>
-                <i class='bx bxl-javascript'></i>
-                <i class='bx bxl-html5' ></i>
-                <i class='bx bxl-python' ></i>
-                <i class='bx bxl-react' ></i>
-                <i class='bx bxl-tailwind-css' ></i>
+                <i class='bx bxl-css3' id="CSS3"></i>
+                <i class='bx bxl-javascript' id="Javascript"></i>
+                <i class='bx bxl-html5' id="Html5" ></i>
+                <i class='bx bxl-python' id="Python" ></i>
+                <i class='bx bxl-react'  id="React"></i>
+                <i class='bx bxl-tailwind-css' id="Tailwind" ></i>
             </div>
+            <h2 id="skill-name"></h2>
         </div>
-        <div class="projects">
+
+        <div class="projects" id="projects">
             <h2>My projects</h2>
             <div class="container-projects">
                 <div class="box-project">
@@ -183,7 +185,7 @@
             </div>
         </div>
   
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="form-contact">
                 <form class="get-in-touch">
                     <h2>Get In Touch</h2>
