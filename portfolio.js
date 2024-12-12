@@ -30,4 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
             skill_name.textContent = "";
         })
     })
+
+    const navbarItems = document.querySelectorAll('.navbar ul a');
+    navbarItems.forEach((e)=>{
+        e.addEventListener('click' , (e)=>{
+            e.preventDefault()
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            targetSection.scrollIntoView({
+                behavior:'smooth',
+                block:'start'
+            })
+        })
+    })
+
+
 })
