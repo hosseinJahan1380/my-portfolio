@@ -31,20 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    const navbarItems = document.querySelectorAll('.navbar ul a');
-    navbarItems.forEach((e)=>{
-        e.addEventListener('click' , (e)=>{
-            e.preventDefault()
+    // const navbarItems = document.querySelectorAll('.navbar ul a');
+    // navbarItems.forEach((e)=>{
+    //     e.addEventListener('click' , (e)=>{
+    //         e.preventDefault()
 
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
+    //         const targetId = this.getAttribute('href');
+    //         const targetSection = document.querySelector(targetId);
 
-            targetSection.scrollIntoView({
-                behavior:'smooth',
-                block:'start'
-            })
-        })
-    })
+    //         targetSection.scrollIntoView({
+    //             behavior:'smooth',
+    //             block:'start'
+    //         })
+    //     })
+    // })
 
 
 })
