@@ -31,20 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    // const navbarItems = document.querySelectorAll('.navbar ul a');
-    // navbarItems.forEach((e)=>{
-    //     e.addEventListener('click' , (e)=>{
-    //         e.preventDefault()
-
-    //         const targetId = this.getAttribute('href');
-    //         const targetSection = document.querySelector(targetId);
-
-    //         targetSection.scrollIntoView({
-    //             behavior:'smooth',
-    //             block:'start'
-    //         })
-    //     })
-    // })
-
+    const menu_bar= document.getElementById('menu-bar');
+    const dropdown_menu = document.querySelector('.dropdown-menu')
+    menu_bar.addEventListener('click' , ()=>{
+        menu_bar.classList.toggle('bx-x')
+        menu_bar.style.color = menu_bar.classList.contains('bx-x') ? '#fff':"#333"
+        dropdown_menu.classList.toggle('open')
+    })
 
 })
